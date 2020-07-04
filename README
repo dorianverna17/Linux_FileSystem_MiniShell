@@ -1,0 +1,82 @@
+Verna Dorian-Alexandru, grupa 314CC
+
+Listele au fost implementate in fisierul file.h
+Am mai creat doua structuri, una pentru un nod
+din lista de fisiere si una pentru un nod din
+lista de directoare.
+Fiecare dintre aceste doua structuri contine cate
+doi pointeri, unul pentru next(urmatorul element
+din lista) si unul pentru prev(elementul precedent
+din lista). De asemenea, structura pentru nodul de
+directoare contine si un pointer catre structura
+Directory, iar structura pentru nodul de fisiere
+contine si un pointer structura File.
+Am ales sa fac cu liste dublu inlantuite, dar cred
+nu era totusi necesar. Am considerat la inceput ca
+poate fi mai usor.
+
+Fisierul "fsminishell.c" contine mai multe functii,
+functia main apeland doar o functie mai mare care
+contine o implementare cu o bucla while a promptului.
+De altfel, functia se si numeste sugestiv "prompt".
+Atata timp cat se citeste un sir de caractere de la
+stdin, atunci se intra in bucla while.
+
+In momentul cand se citeste "create fs", atunci se
+apeleaza functia "init_root", care initializeaza
+radacina "sistemului de fisiere". Cu un if se verifica
+daca s-a dat aceasta comanda. Daca nu s-a dat comanda,
+atunci se iese din executia programului.
+
+Daca se da comanda "delete fs", atunci (se presupune
+ca suntem in while, deoarece s-a dat create fs),
+atunci se iese din while cu un break. Apoi se iese
+din functie.
+
+Mai departe am doua functii, una pentru adaugare
+nod in lista de functii (touch), alta pentru adaugare nod
+in lista de directoare (mkdir), "push_front_file" si
+"push_front_directory". M-am bazat pe codul scris de
+mine la laboratoare, dar l-am adaptat pentru ce imi
+trebuia la tema. Initial m-am gandit ca o sa adaug
+numai la inceput, dar dupa am descoperit ca trebuie
+sa le pun in ordine lexicografica.
+
+"cd", "pwd" si "ls" le-am implementat in functia
+"prompt", nu am mai facut functii separate pentru ele.
+
+Pentru tree am facut o functie separata, care este
+recursiva.
+
+Comenzile "rm" si "rmdir" le-am implementat tot in
+functia prompt. Dupa ce se taie legaturile intre noduri,
+acestea apeleaza doua functii de eliberare
+de memorie a nodurilor respective. Pentru eliberarea
+memoriei unui nod dintr-o lista de directoare a trebuit
+sa fac o functie recursiva pentru eliberarea memoriei
+tuturor fisierelor si directoarelor din ierarhia
+directorului respectiv ("free_dir"). Mai am o functie
+pentru eliberarea unui nod dintr-o lista de fisiere
+(free_file).
+
+Am avut si o serie de erori la valgrind, dar ele au
+tinut in principiu de lucrul cu pointeri. Descoperirea
+erorilor si modificarea codului a durat cel mai mult
+din punctul meu de vedere. O eroare la care m-am gandit
+mult(de exemplu) a fost reprezentata de faptul ca am
+alocat dinamic elementul parentDir din structura
+Directory, ceea ce nu trebuia facut(primeam la valgrind
+o eroare cu bytes definetely lost).
+
+"find" a fost implementat tot cu ajutorul unei functii,
+aceasta fiind recursiva.
+
+In total codul mi-a luat cam 3-4 zile sa il scriu cu
+cateva ore de lucru pe zi, iar alte 3-4 zile mi-a luat
+corectez erorile de la valgrind si in final sa fac
+functia "find".
+
+Per total a fost o tema interesanta, consider ca am
+invatat mai bine elementele operatiile cu liste
+si am aprofundat notiunile de la laborator si de la
+curs.
