@@ -1,0 +1,45 @@
+create fs
+tree
+mkdir dir1
+touch file1 x
+mdkir dir2
+touch file3 x
+touch file2 x
+touch file4 x
+tree
+cd file1
+cd dir1
+touch f3 x
+mkdir dir11
+touch f2 x
+touch f1 x
+mkdir dir12
+mkdir dir13
+cd dir11
+touch f1 x
+touch f2 x
+touch f3 x
+tree
+cd ..
+cd dir12
+mkdir dir121
+cd dir121
+touch f111 x
+mkdir dir1211
+touch bingo x
+pwd
+cd ..
+cd ..
+mkdir dir122
+mkdir dir123
+cd dir13
+mkdir dir133
+touch f1 x
+mkdir dir132
+touch f3 x
+mkdir dir131
+touch f2 x
+cd ..
+cd ..
+tree
+delete fs

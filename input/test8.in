@@ -1,0 +1,19 @@
+create fs
+mkdir d1
+cd d1
+pwd
+mkdir d11
+cd d11
+mkdir d111
+mkdir d112
+cd d111
+pwd
+cd ..
+pwd
+cd d112
+pwd
+cd ..
+cd ..
+cd ..
+pwd
+delete fs

@@ -1,0 +1,9 @@
+create fs
+ls
+mkdir d1
+ls
+mkdir d2
+ls
+mkdir d3
+ls
+delete fs

@@ -1,0 +1,26 @@
+create fs
+touch f1 x
+touch f2 x
+cd f1
+cd f2
+mkdir d1
+mkdir d2
+ls
+cd d1
+mkdir d11
+cd d2
+pwd
+cd ..
+cd d2
+cd d1
+pwd
+mkdir d1
+cd d1
+cd d11
+pwd
+cd ..
+cd ..
+cd d1
+cd d11
+pwd
+delete fs

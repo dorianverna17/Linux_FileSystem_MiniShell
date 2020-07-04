@@ -1,0 +1,64 @@
+create fs
+touch f1 aaaaa
+touch f2 bbbbb
+touch f3 ccccc
+touch f6 aaaaaaaaaa
+touch f4 bbbbbbbbbb
+touch f5 cccccccccc
+mkdir d1
+mkdir d2
+mkdir d3
+cd d1
+touch f11 aaa
+touch f12 bbb
+touch f13 ccc
+mkdir d11
+mkdir d12
+cd d11
+touch f111 aaaa
+touch f112 bbbb
+touch f113 cccc
+mkdir d111
+cd d111
+touch f1111 aaaaa
+touch f1112 bbbbb
+touch f1113 ccccc
+cd ..
+cd ..
+cd d12
+touch f121 aaaa
+touch f122 bbbb
+touch f123 cccc
+mkdir d121
+cd d121
+touch f1211 aaaaa
+touch f1212 bbbbb
+touch f1213 ccccc
+cd ..
+cd ..
+cd ..
+cd d2
+touch f21 aaa
+touch f22 bbb
+touch f23 ccc
+cd ..
+cd d3
+touch f31 aaa
+touch f32 bbb
+touch f33 ccc
+mkdir d31
+cd d31
+touch f311 aaaa
+touch f312 bbbb
+touch f313 cccc
+cd ..
+cd ..
+find 0 3 5 aaa
+find 0 3 20 bbb
+find 1 3 5 ccc
+find 2 3 5 aaa
+find 3 3 5 aaa
+find 1000 0 1000 c
+find 0 0 10000 b
+find 3 5 5 a
+delete fs

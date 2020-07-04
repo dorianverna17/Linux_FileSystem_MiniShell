@@ -1,0 +1,64 @@
+create fs
+touch f3 x
+mkdir d1
+touch f2 x
+mkdir d2
+touch f1 x
+mkdir d3
+cd d1
+touch f1 x
+touch f2 x
+touch f3 x
+mkdir d11
+mkdir d12
+mkdir d13
+cd d12
+mkdir d121
+mkdir d122
+touch f1 x
+touch f2 x
+cd ..
+cd d13
+mkdir d131
+cd d131
+mkdir d1311
+mkdir d1312
+mkdir d1313
+cd d1312
+touch f1 x
+mkdir 13121
+cd ..
+cd d1313
+touch f1 x
+mkdir d13131
+cd d13131
+touch f1 x
+mkdir d131311
+cd ..
+cd ..
+cd ..
+mkdir d132
+mkdir d133
+touch f1 x
+touch f2 x
+touch f0 x
+cd ..
+cd ..
+cd d2
+mkdir d21
+mkdir d22
+cd d22
+touch f1 x
+touch f2 x
+mkdir d221
+cd ..
+touch f1 x
+touch f2 x
+cd ..
+rm f1
+rm f2
+rm f3
+rmdir d1
+rmdir d2
+rmdir d3
+delete fs

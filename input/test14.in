@@ -1,0 +1,32 @@
+create fs
+mkdir d1
+mkdir d2
+mkdir d3
+ls
+cd d2
+mkdir d22
+mkdir d21
+pwd
+rmdir d22
+ls
+cd ..
+rmdir d2
+ls
+rmdir d2
+touch d2 x
+rmdir d2
+cd d3
+mkdir d31
+cd d31
+mkdir d311
+cd d311
+pwd
+cd ..
+cd ..
+cd ..
+rmdir d3
+ls
+rm d2
+rmdir d1
+ls
+delete fs

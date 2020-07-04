@@ -1,0 +1,15 @@
+create fs
+touch a.in ana
+touch b.in mere
+mkdir subdir1
+cd subdir1
+touch c.in anaaremere
+touch d.in anaa
+mkdir subdir11
+cd subdir11
+pwd
+touch e.in ana
+cd ..
+cd ..
+find 1 3 5 ana
+delete fs

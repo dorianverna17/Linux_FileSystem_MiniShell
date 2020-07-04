@@ -1,0 +1,13 @@
+create fs
+pwd
+ls
+mkdir d5
+mkdir d2
+mkdir d3
+ls
+cd d5
+pwd
+mkdir d51
+cd d51
+pwd
+delete fs

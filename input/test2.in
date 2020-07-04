@@ -1,0 +1,13 @@
+create fs
+ls
+touch f5 x
+ls
+touch f2 x
+ls
+touch f3 x
+ls
+touch f1 x
+ls
+touch f4 x
+ls
+delete fs

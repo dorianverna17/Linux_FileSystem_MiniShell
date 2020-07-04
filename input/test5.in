@@ -1,0 +1,13 @@
+create fs
+touch f5 x
+touch f1 x
+touch f3 x
+touch f2 x
+touch f4 x
+mkdir d1
+mkdir d5
+mkdir d4
+mkdir d3
+mkdir d2
+ls
+delete fs
